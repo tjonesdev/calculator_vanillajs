@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator | Vanilla JS</title>
+  <script src="https://kit.fontawesome.com/ccc0ec0309.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div id="container">
+  <button id="dark-theme" onClick="darkThemeToggle()"><i class="fas fa-moon"></i></button>
+  <div id="calculator" class="light-body light-text">
+    <div id="display-all">
+      <div id="output-nums"></div>
+      <div id="display"></div>
+    </div>
+    <div id="calc-body">
+      <div class="row row-1">
+        <button class="btn operator" id="clear" onClick="clearInput()">C</button><!--
+        --><button class="btn operator" id="plus-minus" onClick="plusMinusInput()">&#177;</button><!--
+        --><button class="btn operator" id="percent" onClick="percentInput()">%</button><!--
+        --><button class="btn operator panel" id="divide" onClick="operatorInput()">/</button>
+      </div>
+      <div class="row row-2">
+        <button class="btn num" id="seven" onClick="numInput()">7</button><!--
+        --><button class="btn num" id="eight" onClick="numInput()">8</button><!--
+        --><button class="btn num" id="nine" onClick="numInput()">9</button><!--
+        --><button class="btn operator panel" id="multiply" onClick="operatorInput()">&#215;</button>
+      </div>
+      <div class="row row-3">
+        <button class="btn num" id="four" onClick="numInput()">4</button><!--
+        --><button class="btn num" id="five" onClick="numInput()">5</button><!--
+        --><button class="btn num" id="six" onClick="numInput()">6</button><!--
+        --><button class="btn operator panel" id="subtract" onClick="operatorInput()">&#8722;</button>
+      </div>
+      <div class="row row-4">
+        <button class="btn num" id="one" onClick="numInput()">1</button><!--
+        --><button class="btn num" id="two" onClick="numInput()">2</button><!--
+        --><button class="btn num" id="three" onClick="numInput()">3</button><!--
+        --><button class="btn operator panel" id="add" onClick="operatorInput()">+</button>
+      </div>
+      <div class="row row-5">
+        <button class="btn num" id="zero" onClick="numInput()">0</button><!--
+        --><button class="btn operator" id="decimal" onClick="decimalInput()">.</button><!--
+        --><button class="btn operator" id="bksp" onClick="bkspInput()"><i class="fas fa-backspace" ></i></button><!--
+        --><button class="btn operator light-equals" id="equals" onClick="equalsInput()">=</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
